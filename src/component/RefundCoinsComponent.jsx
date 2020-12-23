@@ -132,7 +132,7 @@ class RefundCoinsComponent extends Component {
       this.setState({ fiveDisRefund: 0 })
       this.setState({ twoDisRefund: 0 })
       this.setState({ oneDisRefund: 0 })
-       let course ={"refundAmount":this.state.refund}
+       let course ={"refundamountvalue":this.state.refund}
     var twohundredFlag=false;
     var onehundredFlag=false;
     var fiftyFlag=false;
