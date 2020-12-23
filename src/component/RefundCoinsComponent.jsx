@@ -123,7 +123,15 @@ class RefundCoinsComponent extends Component {
 
     addCourseClicked() {
       
-      alert(this.state.refund);
+      //alert(this.state.refund);
+      this.setState({ twohundredDisRefund: 0 })
+      this.setState({ onehundredDisRefund: 0 })
+      this.setState({ fiftyDisRefund: 0 })
+      this.setState({ twentyDisRefund: 0 })
+      this.setState({ tenDisRefund: 0 })
+      this.setState({ fiveDisRefund: 0 })
+      this.setState({ twoDisRefund: 0 })
+      this.setState({ oneDisRefund: 0 })
        let course ={"refundAmount":this.state.refund}
     var twohundredFlag=false;
     var onehundredFlag=false;
@@ -317,9 +325,7 @@ class RefundCoinsComponent extends Component {
                     </tr>
                         </tbody>
                     </table>
-                    <div className="row">
-                        <button className="btn btn-success" onClick={this.addCourseClicked}>Add Coins</button>
-                    </div>
+                    
                 </div>
             </div>
         )
